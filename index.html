@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-content">
+        <h1>Welcome to Our Product</h1>
+        <p>Discover the amazing features of our product</p>
+        <button onclick="scrollToSection('features')">Learn More</button>
+      </div>
+    </header>
+    <section id="features">
+      <h2>Features</h2>
+      <div class="feature-list">
+        <div class="feature-item" onclick="showModal('Feature 1 Details')">
+          <h3>Feature 1</h3>
+          <p>Learn more about Feature 1</p>
+        </div>
+        <div class="feature-item" onclick="showModal('Feature 2 Details')">
+          <h3>Feature 2</h3>
+          <p>Learn more about Feature 2</p>
+        </div>
+        <div class="feature-item" onclick="showModal('Feature 3 Details')">
+          <h3>Feature 3</h3>
+          <p>Learn more about Feature 3</p>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Our product is designed to help you achieve your goals.</p>
+    </section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form id="contact-form" onsubmit="handleFormSubmit(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <p id="modal-text"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!--div.group#ak*7 -->
+<!-- li*5 -->
+<!-- lu*6 -->
+<!-- html:5 -->
+<!-- p*5 -->
+
+<!-- *import moduleName from ''; -->
+<!-- <script></script> -->
